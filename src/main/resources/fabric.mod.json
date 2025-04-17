@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MaqueMods/bonemod-1.21.5"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/bonemod/icon.png",
