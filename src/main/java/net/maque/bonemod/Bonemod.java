@@ -2,6 +2,7 @@ package net.maque.bonemod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.maque.bonemod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +12,6 @@ public class Bonemod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
