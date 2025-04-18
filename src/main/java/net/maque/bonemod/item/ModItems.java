@@ -12,7 +12,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item BONE_SHARD=registerItem("bone_shard",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Bonemod.MOD_ID,"bone_shard")))));
-    public static final Item BONE_TOMAHAWK=registerItem("bone_tomahawk",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Bonemod.MOD_ID,"bone_tomahawk")))));
+    public static final Item BONE_TOMAHAWK=registerItem("bone_tomahawk",new BoneTomahawkItem((new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Bonemod.MOD_ID,"bone_tomahawk"))))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Bonemod.MOD_ID, name), item);
     }

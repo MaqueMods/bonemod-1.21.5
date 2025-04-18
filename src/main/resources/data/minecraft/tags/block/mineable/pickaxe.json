@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "bonesmod.bone_ore_block"
+    "bonemod:bone_ore"
   ]
 }

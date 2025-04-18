@@ -14,7 +14,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block BONE_ORE_BLOCK = registerBlock("bone_ore_block",
+    public static final Block BONE_ORE = registerBlock("bone_ore",
             AbstractBlock.Settings.create().strength(3f).requiresTool());
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
@@ -34,8 +34,8 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Bonemod.LOGGER.info("Registering Mod Blocks for " + Bonemod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.BONE_ORE_BLOCK);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ModBlocks.BONE_ORE);
         });
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "bonemod:block/bone_ore_block"
+    "all": "bonemod:block/bone_ore"
   }
 }
